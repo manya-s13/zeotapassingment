@@ -1,0 +1,21 @@
+id,first_name,last_name,email,phone,country,job_title,salary
+1,John,Doe,johndoe@example.com,555-123-4567,USA,Software Engineer,95000
+2,Jane,Smith,janesmith@example.com,555-987-6543,Canada,Data Scientist,102000
+3,Robert,Johnson,robert.j@example.com,555-234-5678,UK,Product Manager,110000
+4,Maria,Garcia,mgarcia@example.com,555-876-5432,Spain,UX Designer,88000
+5,Yuki,Tanaka,ytanaka@example.com,555-345-6789,Japan,DevOps Engineer,93000
+6,Li,Wei,liwei@example.com,555-765-4321,China,Database Administrator,89000
+7,Ahmed,Khan,akhan@example.com,555-456-7890,UAE,Systems Architect,115000
+8,Sarah,Brown,sbrown@example.com,555-654-3210,Australia,QA Engineer,82000
+9,Carlos,Rodriguez,crodriguez@example.com,555-567-8901,Mexico,Frontend Developer,78000
+10,Anna,Kowalski,akowalski@example.com,555-543-2109,Poland,Backend Developer,85000
+11,Raj,Patel,rpatel@example.com,555-678-9012,India,Machine Learning Engineer,98000
+12,Emma,Johnson,ejohnson@example.com,555-432-1098,Canada,Technical Writer,72000
+13,Michael,Taylor,mtaylor@example.com,555-789-0123,USA,Solution Architect,108000
+14,Sophia,Kim,skim@example.com,555-321-0987,South Korea,Cloud Engineer,91000
+15,Lucas,Müller,lmuller@example.com,555-890-1234,Germany,Security Specialist,99000
+16,Isabella,Silva,isilva@example.com,555-210-9876,Brazil,Mobile Developer,81000
+17,Omar,Hassan,ohassan@example.com,555-901-2345,Egypt,Embedded Systems Engineer,87000
+18,Olivia,Martin,omartin@example.com,555-109-8765,France,Data Engineer,94000
+19,Daniel,Chen,dchen@example.com,555-012-3456,China,Full Stack Developer,90000
+20,Zoe,Campbell,zcampbell@example.com,555-098-7654,New Zealand,UI/UX Researcher,79000

@@ -35,6 +35,23 @@ A web-based data ingestion tool that enables **bidirectional data flow** between
 
 ---
 
+## Replit Setup Instructions
+
+1. Open Replit at: https://replit.com/ and log in.
+
+2. Click the Create(app) Repl button and choose Import from GitHub.
+
+3. Paste the repository link: https://github.com/adarsh342/Data Ingestion Tool.git
+
+into the input field.
+
+4. Click Next to proceed. Replit will auto-detect the run command.
+
+5. If asked, use Run main.py or select the green Run icon shown as python main.py.
+
+6. The app interface will launch and be ready for interaction.
+
+
 ## Setup Instructions
 
 ### 1. Clone the Repo

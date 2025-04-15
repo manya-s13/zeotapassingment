@@ -39,8 +39,8 @@ A web-based data ingestion tool that enables **bidirectional data flow** between
 
 ### 1. Clone the Repo
 ```bash
-git clone https://github.com/adarsh342/adventureconnect.git
-cd adventureconnect
+git clone https://github.com/adarsh342/Data_Ingestion_Tool.git
+cd Data_Ingestion_Tool
 ```
 
 ### 2. (Optional) Create Virtual Environment

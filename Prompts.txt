@@ -10,9 +10,6 @@
 7. "Show me how to validate connection and handle ClickHouse authentication errors."
 8. "Create a simple HTML UI with dropdowns, file input, and action buttons."
 9. "How to report total record count after ingestion and show it on UI?"
-10. "Generate a clean README.md for this project with all features and setup steps."
-11. "Give a checklist to compare our implementation with assignment requirements."
-12. "Craft a prompts.txt file to track AI prompt usage for this assignment."
-
+10. "Give a checklist to compare our implementation with assignment requirements."
 # Note:
 All prompts were conversationally built with ChatGPT as a companion guide during development of the ClickHouse-Flat File Ingestion project.

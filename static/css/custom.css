@@ -1,66 +1,87 @@
-/* Custom CSS styles for ClickHouse & Flat File Integration Tool */
 
-/* Progress bar animation */
-@keyframes progress {
-  0% { width: 0; }
-  100% { width: 100%; }
+/* Modern UI styles for Data Integration Tool */
+
+:root {
+  --primary-color: #6366f1;
+  --primary-hover: #4f46e5;
+  --success-color: #22c55e;
+  --danger-color: #ef4444;
+  --warning-color: #f59e0b;
+  --info-color: #3b82f6;
 }
 
-.progress-bar.active {
-  animation: progress 3s linear infinite;
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-size: 1rem 1rem;
+body {
+  background-color: #f8fafc;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-/* Custom spinner for loading states */
-.loading-spinner {
-  border: 4px solid rgba(0, 0, 0, 0.1);
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border-left-color: var(--bs-primary);
-  animation: spin 1s linear infinite;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+.card {
+  background: #ffffff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* Table style enhancements */
-.data-table {
-  width: 100%;
-  overflow-x: auto;
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
 }
 
-.data-table th {
-  position: sticky;
-  top: 0;
-  z-index: 1;
+.card-header {
+  background: #f1f5f9;
+  border-bottom: 1px solid #e2e8f0;
+  border-radius: 12px 12px 0 0;
+  padding: 1rem;
+}
+
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
 }
 
 /* Step indicators */
 .step-indicator {
   display: flex;
-  margin-bottom: 20px;
+  gap: 1rem;
+  margin: 2rem 0;
 }
 
 .step {
   flex: 1;
-  text-align: center;
-  padding: 10px;
+  padding: 1rem;
+  background: #f1f5f9;
+  border-radius: 8px;
   position: relative;
+  text-align: center;
+  font-size: 0.875rem;
 }
 
 .step::after {
   content: '';
   position: absolute;
+  top: 50%;
+  right: -1rem;
+  width: 1rem;
   height: 2px;
-  background-color: var(--bs-secondary);
-  top: 20px;
-  width: 100%;
-  left: 50%;
-  z-index: -1;
+  background: #cbd5e1;
 }
 
 .step:last-child::after {
@@ -68,67 +89,124 @@
 }
 
 .step.active {
-  color: var(--bs-primary);
-  font-weight: bold;
+  background: var(--primary-color);
+  color: white;
 }
 
 .step.completed {
-  color: var(--bs-success);
+  background: var(--success-color);
+  color: white;
 }
 
-/* Join configuration UI */
-.join-condition {
-  background-color: rgba(var(--bs-info-rgb), 0.1);
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 10px;
+/* Form elements */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  padding: 0.75rem;
 }
 
-/* Preview section */
-.preview-container {
-  max-height: 400px;
-  overflow-y: auto;
-  border: 1px solid var(--bs-secondary);
-  border-radius: 5px;
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
 }
 
-/* Highlight success/error messages */
-.result-message {
-  padding: 15px;
-  border-radius: 5px;
-  margin: 15px 0;
+/* Tables */
+.data-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1rem 0;
 }
 
-.result-message.success {
-  background-color: rgba(var(--bs-success-rgb), 0.1);
-  border-left: 5px solid var(--bs-success);
+.data-table th {
+  background: #f8fafc;
+  padding: 1rem;
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 2px solid #e2e8f0;
 }
 
-.result-message.error {
-  background-color: rgba(var(--bs-danger-rgb), 0.1);
-  border-left: 5px solid var(--bs-danger);
+.data-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
 }
 
-/* Card enhancements */
-.config-card {
-  transition: all 0.3s ease;
+/* Progress bar */
+.progress {
+  height: 0.75rem;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #f1f5f9;
 }
 
-.config-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.progress-bar {
+  border-radius: 999px;
+  transition: width 0.3s ease;
 }
 
-/* Responsive utilities */
+.progress-bar.active {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 1rem 1rem;
+  animation: progress-bar-stripes 1s linear infinite;
+}
+
+@keyframes progress-bar-stripes {
+  from { background-position: 1rem 0; }
+  to { background-position: 0 0; }
+}
+
+/* Alerts */
+.alert {
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: none;
+}
+
+.alert-success {
+  background-color: rgba(34, 197, 94, 0.1);
+  color: var(--success-color);
+}
+
+.alert-danger {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--danger-color);
+}
+
+.alert-warning {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: var(--warning-color);
+}
+
+.alert-info {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: var(--info-color);
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
   .step-indicator {
     flex-direction: column;
   }
   
   .step::after {
-    width: 2px;
-    height: 100%;
-    top: 50%;
-    left: 20px;
+    display: none;
+  }
+  
+  .step {
+    margin-bottom: 0.5rem;
+  }
+  
+  .card {
+    margin-bottom: 1rem;
   }
 }

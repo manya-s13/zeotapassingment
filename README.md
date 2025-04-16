@@ -1,4 +1,5 @@
-https://github.com/manya-s13/zeotapassingment/blob/main/videos/flatfileToClickhouse.mov
+[![Watch the video](https://github.com/manya-s13/zeotapassingment/blob/main/videos/flatfileToClickhouse.mov)
+
 # Data Integration Tool
 
 A web-based data ingestion tool that enables **bidirectional data flow** between a ClickHouse database and flat files (CSV)

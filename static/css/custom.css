@@ -1,27 +1,172 @@
-
 /* Modern Minimal UI Design */
 :root {
-  --primary: #1a1a1a;
-  --primary-light: #2d2d2d;
-  --success: #2f855a;
-  --danger: #c53030;
-  --warning: #c05621;
-  --info: #2c5282;
-  --bg: #fafafa;
-  --card: #ffffff;
-  --text: #1a1a1a;
-  --text-light: #666666;
-  --border: #e5e5e5;
-  --step-bg: #f5f5f5;
-  --step-active: #000000;
+  --primary: #4F566B;
+  --primary-light: #697386;
+  --success: #2F855A;
+  --danger: #DC2626;
+  --warning: #F59E0B;
+  --info: #3B82F6;
+  --bg: #F8FAFC;
+  --card: #FFFFFF;
+  --text: #1F2937;
+  --text-light: #6B7280;
+  --border: #E5E7EB;
+  --step-active: #4F566B;
+  --step-complete: #10B981;
 }
 
 body {
-  background: var(--bg);
+  background-color: var(--bg);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.6;
-  padding: 2rem;
+  line-height: 1.5;
+}
+
+/* Card Styles */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+}
+
+.card-header {
+  background: #F9FAFB;
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 1.25rem;
+}
+
+.card-header h4 {
+  color: var(--text);
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Form Controls */
+.form-label {
+  color: var(--text);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  background-color: #F9FAFB;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 0.875rem;
+  padding: 0.625rem 0.75rem;
+  transition: all 0.2s;
+}
+
+.form-control:focus {
+  background-color: #FFFFFF;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(79, 86, 107, 0.1);
+  outline: none;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.625rem 1rem;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-light);
+}
+
+/* Steps */
+.step-indicator {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.step {
+  align-items: center;
+  color: var(--text-light);
+  display: flex;
+  flex: 1;
+  font-size: 0.875rem;
+  padding: 0.75rem;
+  position: relative;
+}
+
+.step.active {
+  color: var(--step-active);
+  font-weight: 500;
+}
+
+.step.completed {
+  color: var(--step-complete);
+}
+
+.step i {
+  margin-right: 0.5rem;
+}
+
+/* Progress Bar */
+.progress {
+  background-color: #F3F4F6;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: var(--step-complete);
+  transition: width 0.3s ease;
+}
+
+/* Messages */
+.alert {
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.alert-success {
+  background-color: #D1FAE5;
+  border: 1px solid #A7F3D0;
+  color: #065F46;
+}
+
+.alert-error {
+  background-color: #FEE2E2;
+  border: 1px solid #FECACA;
+  color: #991B1B;
+}
+
+/* Summary Section */
+.list-group-item {
+  background-color: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 1rem;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.list-group-item:last-child {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 .main-title {
@@ -41,48 +186,6 @@ body {
   padding: 2rem;
 }
 
-/* Card Design */
-.card {
-  background: var(--card);
-  border-radius: 16px;
-  border: none;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
-  margin-bottom: 1.5rem;
-  transition: transform 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-2px);
-}
-
-.card-header {
-  background: transparent;
-  border-bottom: 1px solid var(--border);
-  padding: 1.5rem;
-}
-
-.card-body {
-  padding: 1.5rem;
-}
-
-/* Buttons */
-.btn {
-  border-radius: 6px;
-  font-weight: 500;
-  font-size: 0.875rem;
-  padding: 0.625rem 1.25rem;
-  transition: all 0.2s;
-}
-
-.btn-primary {
-  background: var(--primary);
-  border: none;
-  color: white;
-}
-
-.btn-primary:hover {
-  background: var(--primary-light);
-}
 
 .btn-outline {
   background: transparent;
@@ -103,73 +206,6 @@ body {
   border: none;
 }
 
-/* Form Controls */
-.form-control {
-  background: #edf2f7;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 0.75rem 1rem;
-  transition: all 0.2s;
-  color: var(--text);
-}
-
-.form-control:focus {
-  border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-}
-
-/* Steps */
-.step-indicator {
-  display: flex;
-  gap: 2rem;
-  margin: 2rem 0;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.step {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  flex: 1;
-  min-width: 100px;
-  position: relative;
-}
-
-.step-number {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: var(--step-bg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-  font-size: 0.875rem;
-}
-
-.step-label {
-  font-size: 0.875rem;
-  color: var(--text-light);
-}
-
-.step.active .step-number {
-  background: var(--step-active);
-  color: white;
-}
-
-.step.active .step-label {
-  color: var(--text);
-  font-weight: 500;
-}
-
-.step.completed .step-number {
-  background: var(--success);
-  color: white;
-}
-
-/* Tables */
 .data-table {
   width: 100%;
   margin: 1rem 0;
@@ -187,7 +223,6 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
-/* Progress */
 .progress {
   background: var(--bg);
   border-radius: 999px;
@@ -199,14 +234,6 @@ body {
   background: var(--success);
   border-radius: 999px;
   transition: width 0.3s ease;
-}
-
-/* Alerts */
-.alert {
-  border-radius: 12px;
-  border: none;
-  margin: 1rem 0;
-  padding: 1rem 1.5rem;
 }
 
 .alert-success {
@@ -229,22 +256,20 @@ body {
   color: var(--info);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .container {
     padding: 1rem;
   }
-  
+
   .step {
     flex: 0 0 100%;
   }
-  
+
   .card {
     margin-bottom: 1rem;
   }
 }
 
-/* Custom Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
@@ -254,7 +279,6 @@ body {
   animation: fadeIn 0.3s ease-out;
 }
 
-/* List Groups */
 .list-group-item {
   border: none;
   border-bottom: 1px solid var(--border);
@@ -265,7 +289,6 @@ body {
   border-bottom: none;
 }
 
-/* Custom Checkboxes */
 .form-check-input {
   border-radius: 6px;
   cursor: pointer;

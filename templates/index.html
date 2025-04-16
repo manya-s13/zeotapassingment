@@ -83,30 +83,30 @@
                     </div>
                     <div class="card-body">
                         <form id="connection-form">
-                            <div class="row g-3">
-                                <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-lg-8">
                                     <label for="clickhouse-host" class="form-label">Host</label>
-                                    <input type="text" class="form-control" id="clickhouse-host" placeholder="e.g., my-server.clickhouse.cloud">
+                                    <input type="text" class="form-control" id="clickhouse-host" placeholder="my-server.clickhouse.cloud">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-4">
                                     <label for="clickhouse-port" class="form-label">Port</label>
-                                    <input type="text" class="form-control" id="clickhouse-port" placeholder="e.g., 9440 or 8443">
+                                    <input type="text" class="form-control" id="clickhouse-port" placeholder="9440">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-lg-12">
                                     <label for="clickhouse-database" class="form-label">Database</label>
-                                    <input type="text" class="form-control" id="clickhouse-database" placeholder="e.g., default">
+                                    <input type="text" class="form-control" id="clickhouse-database" placeholder="default">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-lg-6">
                                     <label for="clickhouse-user" class="form-label">User</label>
-                                    <input type="text" class="form-control" id="clickhouse-user" placeholder="e.g., default">
+                                    <input type="text" class="form-control" id="clickhouse-user" placeholder="default">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-lg-6">
                                     <label for="clickhouse-jwt" class="form-label">JWT Token</label>
-                                    <input type="password" class="form-control" id="clickhouse-jwt" placeholder="JWT authentication token">
+                                    <input type="password" class="form-control" id="clickhouse-jwt" placeholder="Enter your JWT token">
                                 </div>
                                 <div class="col-12">
-                                    <button type="button" id="test-clickhouse-connection" class="btn btn-primary">
-                                        <i class="fas fa-plug me-1"></i> Test Connection
+                                    <button type="button" id="test-clickhouse-connection" class="btn btn-primary w-100">
+                                        <i class="fas fa-plug me-2"></i> Test Connection
                                     </button>
                                 </div>
                             </div>

@@ -8,8 +8,8 @@
   --info: #3B82F6;
   --bg: #F8FAFC;
   --card: #FFFFFF;
-  --text: #1F2937;
-  --text-light: #6B7280;
+  --text: #000000;
+  --text-light: #000000;
   --border: #E5E7EB;
   --step-active: #4F566B;
   --step-complete: #10B981;
@@ -55,10 +55,10 @@ body {
 }
 
 .form-control {
-  background-color: #2D3748;
+  background-color: #d6d6d6;
   border: 1px solid var(--border);
   border-radius: 6px;
-  color: #E2E8F0;
+  color: #000000;
   font-size: 0.875rem;
   padding: 0.625rem 0.75rem;
   transition: all 0.2s;

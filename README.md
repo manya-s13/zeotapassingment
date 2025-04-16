@@ -1,4 +1,4 @@
-[![Watch the video](https://github.com/manya-s13/zeotapassingment/blob/main/videos/flatfileToClickhouse.mov)
+[![Watch the video](https://github.com/manya-s13/zeotapassingment/blob/main/videos/flatfileToClickhouse.mp4)
 
 # Data Integration Tool
 

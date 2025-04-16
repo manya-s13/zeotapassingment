@@ -71,6 +71,24 @@ body {
   outline: none;
 }
 
+/*Added this section*/
+.form-check-label {
+  color: #000000;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-check-input {
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+
 /* Buttons */
 .btn {
   border-radius: 6px;
@@ -287,14 +305,4 @@ body {
 
 .list-group-item:last-child {
   border-bottom: none;
-}
-
-.form-check-input {
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.form-check-input:checked {
-  background-color: var(--primary);
-  border-color: var(--primary);
 }

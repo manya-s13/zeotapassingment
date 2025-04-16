@@ -1,5 +1,5 @@
 
-# AdventureConnect: ClickHouse ↔ Flat File Integration Tool
+# Data Integration Tool: ClickHouse ↔ Flat File Integration Tool
 
 A web-based data ingestion tool that enables **bidirectional data flow** between a ClickHouse database and flat files (CSV). This application is ideal for seamless data export/import operations, complete with schema discovery, column selection, and record count reporting.
 
@@ -35,7 +35,7 @@ A web-based data ingestion tool that enables **bidirectional data flow** between
 
 ---
 
-## Replit Setup Instructions
+## Replit Setup Instructions (Detailed setup explained in Data_ingestion_Demo folder)
 
 1. Open Replit at: https://replit.com/ and log in.
 
@@ -78,7 +78,7 @@ python main.py
 
 ---
 
-## Replit Instructions
+## Replit Instructions (Revised Simple Steps)
 
 1. Go to [Replit.com](https://replit.com)
 2. Import from GitHub → paste the repo link

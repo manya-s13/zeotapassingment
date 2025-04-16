@@ -1,17 +1,17 @@
 
 /* Modern Minimal UI Design */
 :root {
-  --primary: #3b82f6;
-  --primary-light: #60a5fa;
-  --success: #22c55e;
-  --danger: #ef4444;
-  --warning: #f59e0b;
-  --info: #6366f1;
-  --bg: #0f172a;
-  --card: #1e293b;
-  --text: #f1f5f9;
-  --text-light: #cbd5e1;
-  --border: #334155;
+  --primary: #4a5568;
+  --primary-light: #718096;
+  --success: #2f855a;
+  --danger: #c53030;
+  --warning: #c05621;
+  --info: #2c5282;
+  --bg: #ffffff;
+  --card: #f7fafc;
+  --text: #1a202c;
+  --text-light: #4a5568;
+  --border: #e2e8f0;
 }
 
 body {
@@ -71,11 +71,12 @@ body {
 
 /* Form Controls */
 .form-control {
-  background: var(--bg);
+  background: #edf2f7;
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 0.75rem 1rem;
   transition: all 0.2s;
+  color: var(--text);
 }
 
 .form-control:focus {

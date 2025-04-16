@@ -1,7 +1,7 @@
 
-# Data Integration Tool: ClickHouse ↔ Flat File Integration Tool
+# Data Integration Tool
 
-A web-based data ingestion tool that enables **bidirectional data flow** between a ClickHouse database and flat files (CSV). This application is ideal for seamless data export/import operations, complete with schema discovery, column selection, and record count reporting.
+A web-based data ingestion tool that enables **bidirectional data flow** between a ClickHouse database and flat files (CSV)
 
 ---
 
@@ -34,22 +34,6 @@ A web-based data ingestion tool that enables **bidirectional data flow** between
 > Project runs smoothly on Replit's web IDE. Just clone the repo and run `main.py`.
 
 ---
-
-## Replit Setup Instructions (Detailed setup explained in Data_ingestion_Demo folder)
-
-1. Open Replit at: https://replit.com/ and log in.
-
-2. Click the Create(app) Repl button and choose Import from GitHub.
-
-3. Paste the repository link: https://github.com/adarsh342/Data Ingestion Tool.git
-
-into the input field.
-
-4. Click Next to proceed. Replit will auto-detect the run command.
-
-5. If asked, use Run main.py or select the green Run icon shown as python main.py.
-
-6. The app interface will launch and be ready for interaction.
 
 
 ## Setup Instructions
@@ -107,8 +91,3 @@ This project used AI-based coding assistance (ChatGPT) for:
 - Prompt file attached: `prompts.txt`
 
 ---
-
-## License
-
-MIT License  
-© 2025 Konga Adarsh Babu 

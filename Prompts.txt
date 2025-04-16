@@ -1,15 +1,12 @@
 
-# Prompts Used with ChatGPT for Assignment
+# Prompts Used with Replit for Assignment
 
 1. "Help me build a Flask app to move data between ClickHouse and CSV files."
 2. "How to connect ClickHouse Cloud using JWT in Python?"
 3. "How to read CSV and insert it into ClickHouse using pandas?"
-4. "How to fetch column names from a ClickHouse table using clickhouse-connect?"
-5. "Create a web interface to select source as ClickHouse or Flat File and connect."
-6. "How to implement preview of first 100 records from selected source?"
-7. "Show me how to validate connection and handle ClickHouse authentication errors."
-8. "Create a simple HTML UI with dropdowns, file input, and action buttons."
-9. "How to report total record count after ingestion and show it on UI?"
-10. "Give a checklist to compare our implementation with assignment requirements."
+4. "Create a web interface to select source as ClickHouse or Flat File and connect."
+5. "help me create a simple UI"
+6. "How to report total record count after ingestion and show it on UI?"
+7. "How do I add the feature for loading bar and preview columns"
 # Note:
-All prompts were conversationally built with ChatGPT as a companion guide during development of the ClickHouse-Flat File Ingestion project.
+All prompts were conversationally built with replit and ChatGpt as a guide during development of the ClickHouse-Flat File Ingestion project.

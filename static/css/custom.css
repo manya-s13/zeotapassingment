@@ -83,7 +83,7 @@ body {
 .btn-primary {
   background-color: var(--primary);
   border: none;
-  color: white;
+  color: #444444;
 }
 
 .btn-primary:hover {

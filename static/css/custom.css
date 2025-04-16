@@ -1,212 +1,219 @@
 
-/* Modern UI styles for Data Integration Tool */
-
+/* Modern Minimal UI Design */
 :root {
-  --primary-color: #6366f1;
-  --primary-hover: #4f46e5;
-  --success-color: #22c55e;
-  --danger-color: #ef4444;
-  --warning-color: #f59e0b;
-  --info-color: #3b82f6;
+  --primary: #2563eb;
+  --primary-light: #3b82f6;
+  --success: #10b981;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+  --info: #6366f1;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --border: #e2e8f0;
 }
 
 body {
-  background-color: #f8fafc;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1000px;
+  padding: 2rem;
 }
 
+/* Card Design */
 .card {
-  background: #ffffff;
+  background: var(--card);
+  border-radius: 16px;
   border: none;
-  border-radius: 12px;
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s;
 }
 
 .card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
 }
 
 .card-header {
-  background: #f1f5f9;
-  border-bottom: 1px solid #e2e8f0;
-  border-radius: 12px 12px 0 0;
-  padding: 1rem;
+  background: transparent;
+  border-bottom: 1px solid var(--border);
+  padding: 1.5rem;
 }
 
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Buttons */
 .btn {
-  border-radius: 8px;
+  border-radius: 10px;
   font-weight: 500;
+  letter-spacing: 0.025em;
   padding: 0.75rem 1.5rem;
   transition: all 0.2s;
 }
 
 .btn-primary {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
+  background: var(--primary);
+  border: none;
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-hover);
-  border-color: var(--primary-hover);
+  background: var(--primary-light);
+  transform: translateY(-1px);
 }
 
-/* Step indicators */
+/* Form Controls */
+.form-control {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  transition: all 0.2s;
+}
+
+.form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Steps */
 .step-indicator {
   display: flex;
   gap: 1rem;
   margin: 2rem 0;
+  flex-wrap: wrap;
 }
 
 .step {
+  background: var(--bg);
+  border-radius: 12px;
   flex: 1;
+  min-width: 120px;
   padding: 1rem;
-  background: #f1f5f9;
-  border-radius: 8px;
   position: relative;
   text-align: center;
-  font-size: 0.875rem;
-}
-
-.step::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: -1rem;
-  width: 1rem;
-  height: 2px;
-  background: #cbd5e1;
-}
-
-.step:last-child::after {
-  display: none;
 }
 
 .step.active {
-  background: var(--primary-color);
+  background: var(--primary);
   color: white;
 }
 
 .step.completed {
-  background: var(--success-color);
+  background: var(--success);
   color: white;
-}
-
-/* Form elements */
-.form-control {
-  border-radius: 8px;
-  border: 1px solid #e2e8f0;
-  padding: 0.75rem;
-}
-
-.form-control:focus {
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
 }
 
 /* Tables */
 .data-table {
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
   margin: 1rem 0;
 }
 
 .data-table th {
-  background: #f8fafc;
-  padding: 1rem;
+  background: var(--bg);
   font-weight: 600;
+  padding: 1rem;
   text-align: left;
-  border-bottom: 2px solid #e2e8f0;
 }
 
 .data-table td {
   padding: 1rem;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid var(--border);
 }
 
-/* Progress bar */
+/* Progress */
 .progress {
-  height: 0.75rem;
+  background: var(--bg);
   border-radius: 999px;
+  height: 0.5rem;
   overflow: hidden;
-  background: #f1f5f9;
 }
 
 .progress-bar {
+  background: var(--success);
   border-radius: 999px;
   transition: width 0.3s ease;
 }
 
-.progress-bar.active {
-  background-image: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.15) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.15) 50%,
-    rgba(255, 255, 255, 0.15) 75%,
-    transparent 75%,
-    transparent
-  );
-  background-size: 1rem 1rem;
-  animation: progress-bar-stripes 1s linear infinite;
-}
-
-@keyframes progress-bar-stripes {
-  from { background-position: 1rem 0; }
-  to { background-position: 0 0; }
-}
-
 /* Alerts */
 .alert {
-  border-radius: 8px;
-  padding: 1rem;
-  margin: 1rem 0;
+  border-radius: 12px;
   border: none;
+  margin: 1rem 0;
+  padding: 1rem 1.5rem;
 }
 
 .alert-success {
-  background-color: rgba(34, 197, 94, 0.1);
-  color: var(--success-color);
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success);
 }
 
 .alert-danger {
-  background-color: rgba(239, 68, 68, 0.1);
-  color: var(--danger-color);
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--danger);
 }
 
 .alert-warning {
-  background-color: rgba(245, 158, 11, 0.1);
-  color: var(--warning-color);
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--warning);
 }
 
 .alert-info {
-  background-color: rgba(59, 130, 246, 0.1);
-  color: var(--info-color);
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--info);
 }
 
-/* Responsive design */
+/* Responsive */
 @media (max-width: 768px) {
-  .step-indicator {
-    flex-direction: column;
-  }
-  
-  .step::after {
-    display: none;
+  .container {
+    padding: 1rem;
   }
   
   .step {
-    margin-bottom: 0.5rem;
+    flex: 0 0 100%;
   }
   
   .card {
     margin-bottom: 1rem;
   }
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* List Groups */
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 1.5rem;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+/* Custom Checkboxes */
+.form-check-input {
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: var(--primary);
+  border-color: var(--primary);
 }

@@ -55,10 +55,10 @@ body {
 }
 
 .form-control {
-  background-color: #F9FAFB;
+  background-color: #2D3748;
   border: 1px solid var(--border);
   border-radius: 6px;
-  color: var(--text);
+  color: #E2E8F0;
   font-size: 0.875rem;
   padding: 0.625rem 0.75rem;
   transition: all 0.2s;
